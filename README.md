@@ -73,7 +73,17 @@ __Setup Instructions__
 7. ***VERY IMPORTANT check the region in the upper right corner “N. Virginia” an select the correct region, EX. “EU (Ireland)” for Italy***
 8. Click on Services and search for Lambda
 9. Click on Create Function
-10. Select Plan
+10. Select Plan "Author From Scratch
+    Give a Function Name and chose Python 3.7 for Runtime
+11. Click on Choose or create an execution role
+    Put "basic_lambda_execution" in Role Name and "Basic Lambda@Edge Permissions (for CloudFront trigger)" in Policy templates -             optional
+12. After the creation select Add Trigger and chose "Alexa Skills Kit".
+13. Disable Skill ID verification
+14. Near Function Code click Actions and Upload a Zip File, upload this file:            https://github.com/wes1993/YouTubeForAlexa/blob/master/YouTubeForAlexaLambda.zip
+15. In the Lambda Funcion Page near Environment variables click edit (in the bottom of the page).
+16. Add Environment variables with DEVELOPER_KEY and the code that we have taken from Google (saved before).
+17. In the Basic settings fields set 512 in Memory (MB) and 10 Sec in Timeout
+18. Click save and copy the ARN - in the top right corner of the page.
 
 
 
