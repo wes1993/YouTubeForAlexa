@@ -37,8 +37,30 @@ Commands 8, 9, 10 and 11 are only available in English at the moment. Need them 
 2. It appears this skill only works on Amazon Echo products, not on 3rd party products that support Alexa. If you get it to work on another device, please let me know.
 3. Live videos work on Gen 2 devices onwards, not on the original Gen 1 Echo.
 
-## Setup Instructions
+__Setup Instructions__
+## Obtain The AWS Lambda ARN
+## Google Part
+1. Wee Need a YouTube Developer Key.
+2. Go to: https://developers.google.com/ login or create a new account
+3. Go to: https://console.developers.google.com/project and click on "Make a New Project"
+4. Give it a name, for example “Updated API Token”
+5. Click on “Create”
+6. Wait a few seconds that the project is created (You can check by a notification in upper right corner of the screen)
+7. Open in a new page: https://console.developers.google.com/apis/library?project=tester-api-key
+8. Select “Chose a Project” and click on the newly created project (“Updated API Token”)
+9. From the search bar write “youtube” and select “YouTube Data API v3”
+10. Click on it and select “ENABLE”
+11. Click on "Create Credentials"
+12. Set like this:
+      - “Which API are you using?”: YouTube Data API v3
+      - “From where you call the API?”: Server web (ex. node.js, Tomcat)
+      - “Which data you use?”: Public Data
+      - Click on “Which credentials i need?”
+13.  After some seconds you will see under “Get your credentials” the key that wee need.
+14. ## COPY ## and ## SAVE ## the key in the notepad.
+## Amazon AWS Part
 
+## Setting Up the Alexa Skill
 1. Go to the Alexa Console (https://developer.amazon.com/alexa/console/ask)
 2. If you have not registered as an Amazon Developer then you will need to do so. Fill in your details and ensure you answer "NO" for "Do you plan to monetize apps by charging for apps or selling in-app items" and "Do you plan to monetize apps by displaying ads from the Amazon Mobile Ad Network or Mobile Associates?"
 3. Once you are logged into your account click "Create Skill" on the right hand side.
