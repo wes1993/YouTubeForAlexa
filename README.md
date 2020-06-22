@@ -57,7 +57,7 @@ __Setup Instructions__
       - “Which data you use?”: Public Data
       - Click on “Which credentials i need?”
 13.  After some seconds you will see under “Get your credentials” the key that wee need.
-14. ## COPY ## and ## SAVE ## the key in the notepad.
+14. **COPY** and **SAVE** the key in the notepad.
 ## Amazon AWS Part
 
 ## Setting Up the Alexa Skill
