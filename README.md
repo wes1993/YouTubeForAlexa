@@ -59,6 +59,14 @@ __Setup Instructions__
 13.  After some seconds you will see under “Get your credentials” the key that wee need.
 14. **COPY** and **SAVE** the key in the notepad.
 ## Amazon AWS Part
+###### For people that don'y have an Amazon AWS Account
+1. Go to: http://aws.amazon.com
+2. Click on “Open Console” in upper right
+3. Create a new AWS Account by clicking on “Create a new AWS account”
+4. *** During the registration SELECT THE FREE BASIC PLAN! (If you don't see a page to chose the plan means that you have the free basic plan selected). 
+For confirm your identity Amazon will ask for a Credit Card, THIS IS NORMAL, you don't pay anythig but you need to have at least 1 € on the card for pre-authorization. Per confermare l’attivazione dell’account ci può volere un po’ di tempo, qualche minuto o qualche ora e se quando procederete nella lettura della guida vi ritroverete davanti a questo avviso: ***
+
+
 
 ## Setting Up the Alexa Skill
 1. Go to the Alexa Console (https://developer.amazon.com/alexa/console/ask)
