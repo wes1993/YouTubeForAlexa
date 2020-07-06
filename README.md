@@ -63,11 +63,11 @@ __Setup Instructions__
 1. Go to: http://aws.amazon.com
 2. Click on “Open Console” in upper right
 3. Create a new AWS Account by clicking on “Create a new AWS account”
-4. ***During the registration SELECT THE FREE BASIC PLAN! (If you don't see a page to chose the plan means that you have the free basic    plan selected).*** 
-   ***For confirm your identity Amazon will ask for a Credit Card, THIS IS NORMAL, you don't pay anythig but you need to have at least 1    € on the card for pre-authorization. To confirm the activation of your account Amazon can take from some minutes to some hours.
+4. ***During the registration SELECT THE FREE BASIC PLAN! (If you don't see a page to chose the plan means that you have the free basic plan selected).*** 
+   ***For confirm your identity Amazon will ask for a Credit Card, THIS IS NORMAL, you don't pay anythig but you need to have at least 1 € on the card for pre-authorization. To confirm the activation of your account Amazon can take from some minutes to some hours.***
    ***You will se this page:***
 
-   ***To speed up the process try to click on “Complete your AWS registration” and confirm you mobile number. If will take more than 24    hours try to contact the support.***
+   ***To speed up the process try to click on “Complete your AWS registration” and confirm you mobile number. If will take more than 24 hours try to contact the support.***
 5. After the activation of the Account go here: http://aws.amazon.com.
 6. Click on “Open Console”.
 7. ***VERY IMPORTANT check the region in the upper right corner “N. Virginia” an select the correct region, EX:***
