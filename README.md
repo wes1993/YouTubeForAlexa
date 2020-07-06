@@ -70,7 +70,10 @@ __Setup Instructions__
    ***To speed up the process try to click on “Complete your AWS registration” and confirm you mobile number. If will take more than 24    hours try to contact the support.***
 5. After the activation of the Account go here: http://aws.amazon.com.
 6. Click on “Open Console”.
-7. ***VERY IMPORTANT check the region in the upper right corner “N. Virginia” an select the correct region, EX. “EU (Ireland)” for Italy***
+7. ***VERY IMPORTANT check the region in the upper right corner “N. Virginia” an select the correct region, EX:***
+   ***US East (N.Virginia) region for English (US) or English (CA) skills***
+   ***EU (Ireland) region for English (UK), English (IN), German (DE), Spanish (ES) or French (FR) skills***
+   ***US West (Oregon) region for Japanese and English (AU) skills.***
 8. Click on Services and search for Lambda
 9. Click on Create Function
 10. Select Plan "Author From Scratch
