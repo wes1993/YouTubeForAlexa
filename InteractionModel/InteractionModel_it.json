@@ -657,8 +657,13 @@
                     "slots": [],
                     "samples": [
                         "Aggiungi ai preferiti",
+                        "Aggiungere ai preferiti",
                         "Aggiungilo ai preferiti",
+                        "Aggiungerlo ai preferiti",
                         "Aggiungi il video ai preferiti",
+                        "Aggiungere il video ai preferiti",
+                        "Aggiungere il brano ai preferiti",
+                        "Aggiungere la canzone ai preferiti",
                         "Aggiungi questa canzone ai preferiti"
                     ]
                 },
