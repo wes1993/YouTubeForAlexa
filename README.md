@@ -1,7 +1,7 @@
 # YouTubeForAlexa
 An Alexa Skill For Play YouTube with Echo Devices
 ## Unofficial YouTube skill for Alexa
-__Last update: 10 Dic 2020 (I get it works at 10 Dic 2020 - USE Python 3.7 in Amazon AWS)__
+__Last update: 24 Jan 2021 (USE Python 3.7 in Amazon AWS)__
 
 ## Features
 * Play audio from YouTube videos
@@ -25,7 +25,6 @@ __Last update: 10 Dic 2020 (I get it works at 10 Dic 2020 - USE Python 3.7 in Am
 7. Skip forward or back in the video by "Alexa, ask YouTube to skip forward/backward to/by one minute and one second"
 8. Just play one video by "Alexa, ask YouTube to play one video Gangnam Style". You can switch in and out of "autoplay" mode by "Alexa, ask YouTube to turn on/off autoplay."
 9. Find the current time in the video by "Alexa, ask YouTube what is the timestamp?"
-10. If you want to play your own playlists, and the search feature finds other people's, send me a link to your youtube page.
 11. Play related videos, by "Alexa, ask YouTube to play more like this". This is a YouTube feature, don't ask me why it plays what it plays.
 
 Command 7 doesn't seem to work on Generation 1 Echo's, no idea why.
@@ -130,7 +129,7 @@ That song I like | https://youtu.be/ZyhrYis509A
 super awesome playlist | https://www.youtube.com/playlist?list=PL1EQjK4xc6hsirkCQq-MHfmUqGMkSgUTn
 
 Then you can just say "Alexa, ask YouTube to play that song I like" or "Alexa, ask YouTube to play super awesome playlist", and it shoulds play whatever you have linked. The | character separates the name from the link (on mobile it can be hard to find, on Android go to the second page of symbols).
-If you find a video/playlist/channel that you like, and want to add it to your favorites, you can just say "Alexa, ask YouTube to add this video/playlist/channel to my favorites". It will then appear in the list, but you probably want to edit the name, as it just takes the video title. (Adding to favorites is currently only in English, email me if you want to translate.)
+If you find a video/playlist/channel that you like, and want to add it to your favorites, you can just say "Alexa, ask YouTube to add this video/playlist/channel to my favorites". It will then appear in the list, but you probably want to edit the name, as it just takes the video title.
 
 ## FAQ
 * **Alexa tells me she can't find any supported video skills, what does that mean?**
