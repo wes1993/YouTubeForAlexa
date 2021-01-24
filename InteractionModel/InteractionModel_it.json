@@ -614,6 +614,82 @@
                     ]
                 },
                 {
+                    "name": "PlayMoreLikeThisIntent",
+                    "slots": [],
+                    "samples": [
+                        "Riproduci video come questo",
+                        "Riproduci video simili"
+                    ]
+                },
+                {
+                    "name": "AutoplayOnIntent",
+                    "slots": [],
+                    "samples": [
+                        "Attiva esecuzione automatica",
+                        "Attiva riproduzione automatica",
+                        "Switch autoplay on",
+                        "Switch on autoplay"
+                    ]
+                },
+                {
+                    "name": "AutoplayOffIntent",
+                    "slots": [],
+                    "samples": [
+                        "Disattiva esecuzione automatica",
+                        "Disattiva riproduzione automatica",
+                        "Switch autoplay off",
+                        "Switch off autoplay",
+                        "Play this one video"
+                    ]
+                },
+                {
+                    "name": "SayTimestampIntent",
+                    "slots": [],
+                    "samples": [
+                        "Minuto in riproduzione",
+                        "Quale minuto è",
+                        "Che minuto è",
+                        "What is the timestamp"
+                    ]
+                },
+                {
+                    "name": "AddVideoToFavoritesIntent",
+                    "slots": [],
+                    "samples": [
+                        "Aggiungi ai preferiti",
+                        "Aggiungilo ai preferiti",
+                        "Aggiungi il video ai preferiti",
+                        "Aggiungi questa canzone ai preferiti"
+                    ]
+                },
+                {
+                    "name": "AddChannelToFavoritesIntent",
+                    "slots": [],
+                    "samples": [
+                        "Aggiungi il canale ai preferiti",
+                        "Salva il canale ai preferiti",
+                        "Aggiungi questo canele ai preferiti"
+                    ]
+                },
+                {
+                    "name": "AddPlaylistToFavoritesIntent",
+                    "slots": [],
+                    "samples": [
+                        "Aggiungi questa playlist ai preferiti",
+                        "Aggiungi la playlist ai preferiti"
+                    ]
+                },
+                {
+                    "name": "AlexaPlaylistIntent",
+                    "slots": [],
+                    "samples": [
+                        "play the requests playlist",
+                        "riproduci la playlist di alexa",
+                        "play my requests playlist",
+                        "riproduci la mia playlist di alexa"
+                    ]
+                },
+                {
                     "name": "SkipToIntent",
                     "slots": [
                         {
