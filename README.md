@@ -129,7 +129,7 @@ That song I like | https://youtu.be/ZyhrYis509A
 super awesome playlist | https://www.youtube.com/playlist?list=PL1EQjK4xc6hsirkCQq-MHfmUqGMkSgUTn
 
 Then you can just say "Alexa, ask YouTube to play that song I like" or "Alexa, ask YouTube to play super awesome playlist", and it shoulds play whatever you have linked. The | character separates the name from the link (on mobile it can be hard to find, on Android go to the second page of symbols).
-If you find a video/playlist/channel that you like, and want to add it to your favorites, you can just say "Alexa, ask YouTube to add this video/playlist/channel to my favorites". It will then appear in the list, but you probably want to edit the name, as it just takes the video title.
+If you find a video/playlist that you like, and want to add it to your favorites, you can just say "Alexa, ask YouTube to add this video/playlist/ to my favorites". It will then appear in the list, but you probably want to edit the name, as it just takes the video title.
 
 ## FAQ
 * **Alexa tells me she can't find any supported video skills, what does that mean?**
