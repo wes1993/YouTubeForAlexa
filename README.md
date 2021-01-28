@@ -129,7 +129,7 @@ Simple Way but not 100% working:
      - apikey with your api key from rapidapi
      - rapidapi with value true
 Simple Way also, work 100% but you must run a server in your home (Like Raspberry or others) and have static IP or DDNS service like duckdns etc.:
-###### 2. Using your Proxy Server in your LAN with the alexa devices:
+##### 2. Using your Proxy Server in your LAN with the alexa devices:
   1. install Docker: https://docs.docker.com/get-docker/ on the server
   2. install Docker-Compose: https://docs.docker.com/compose/install/ on the server
   3. install this proxy server: https://github.com/vimagick/dockerfiles/tree/master/tinyproxy.
