@@ -35,14 +35,15 @@ Commands 8, 9, 10 and 11 are only available in English at the moment. Need them 
 1. It appears this skill only works on Amazon Echo products, not on 3rd party products that support Alexa. If you get it to work on another device, please let me know.
 2. Live videos work on Gen 2 devices onwards, not on the original Gen 1 Echo.
 
-##### Extra step (Optional):
+## Extra step (Optional):
 Unfortunately for some video Youtube pretend that the request (Amazon AWS Server) come from the client that listen the video (Alexa Device).
 For fixing this there are some ways:
 Simple Way but not 100% working:
 ##1. Using a 3RD party API service (you need to use your card):
-You can access the API at this link: https://rapidapi.com/convertisseur.mp3.video/api/download-video-youtube1, you must register to the website and also give your card numeber (the api if free only for the first 1000 request in 24H, it's about 50 hours of video with duration of 3 minutes)
-After you are registered and obtained your api key you must to create the following Variable:
-xxxxxxx
+  1. Go to this link: https://rapidapi.com/convertisseur.mp3.video/api/download-video-youtube1, and register to the website (the api if free only for the first 1000 request in        24H, it's about 50 hours of video with duration of 3 minutes)
+  2. After you are registered and obtained your api key create the following Variable in the Amazon AWS Lambda:
+     - apikey with your api key from rapidapi
+     - rapidapi with value true
 Simple Way also, work 100% but you must run a server in your home (Like Raspberry or others) and have static IP or DDNS service like duckdns etc.:
 ##2. Using your Proxy Server in your LAN with the alexa devices:
   1. install Docker: https://docs.docker.com/get-docker/ on the server
