@@ -37,7 +37,7 @@ Commands 8, 9, 10 and 11 are only available in English at the moment. Need them 
 
 ## Extra step (Optional):
 Unfortunately for some video Youtube pretend that the request (Amazon AWS Server) come from the client that listen the video (Alexa Device).
-For fixing this there are some ways:
+For fixing this there are some ways:/n
 Simple Way but not 100% working:
 ##1. Using a 3RD party API service (you need to use your card):
   1. Go to this link: https://rapidapi.com/convertisseur.mp3.video/api/download-video-youtube1, and register to the website (the api if free only for the first 1000 request in        24H, it's about 50 hours of video with duration of 3 minutes)
