@@ -3,6 +3,8 @@ An Alexa Skill For Play YouTube with Echo Devices
 ## Unofficial YouTube skill for Alexa
 __Last update: 24 Jan 2021 (USE Python 3.7 in Amazon AWS)__
 
+# If you like my work buy me a coffe: [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/paypalme/wes93)
+
 ## Features
 * Play audio from YouTube videos
 * Play video (if supported) on live videos or if you ask for just one specific video (command 8)
