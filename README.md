@@ -135,7 +135,7 @@ Simple Way also, work 100% but you must run a server in your home (Like Raspberr
   1. install Docker: https://docs.docker.com/get-docker/ on the server
   2. install this proxy server: https://hub.docker.com/r/vimagick/tinyproxy, using this command: docker pull vimagick/tinyproxy.
   3. Chose the port where the proxy is exposed and change <port> with chosen port then run the proxy(container in docker) with this command: 
-     docker run --name TinyProxy --restart=always -d -p <port>:8888 -v TinyProxy_Config:/etc/tinyproxy vimagick/tinyproxy:latest
+     '''docker run --name TinyProxy --restart=always -d -p <port>:8888 -v TinyProxy_Config:/etc/tinyproxy vimagick/tinyproxy:latest'''
   5. You need to add this variables in the Amazon AWS Lambda:
      - proxy_enabled with value true
      - proxy with value yourip/ddns:8888
