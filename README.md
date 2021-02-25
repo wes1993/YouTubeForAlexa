@@ -128,17 +128,22 @@ Simple Way but not 100% working:
 ##### 1. Using a 3RD party API service (you need to use your card):
   1. Go to this link: https://rapidapi.com/convertisseur.mp3.video/api/download-video-youtube1, and register to the website (the api if free only for the first 1000 request in        24H, it's about 50 hours of video with duration of 3 minutes)
   2. After you are registered and obtained your api key create the following Variable in the Amazon AWS Lambda:
-     - apikey with your api key from rapidapi
-     - rapidapi with value true
+     - ```apikey``` with your api key from rapidapi
+     - ```rapidapi``` with value ```true```
 Simple Way also, work 100% but you must run a server in your home (Like Raspberry or others) and have static IP or DDNS service like duckdns etc.:
 ##### 2. Using your Proxy Server in your LAN with the alexa devices:
   1. install Docker: https://docs.docker.com/get-docker/ on the server
   2. install this proxy server: https://hub.docker.com/r/vimagick/tinyproxy, using this command: docker pull vimagick/tinyproxy.
   3. Chose the port where the proxy is exposed and change <port> with chosen port then run the proxy(container in docker) with this command: 
      ```docker run --name TinyProxy --restart=always -d -p <port>:8888 -v TinyProxy_Config:/etc/tinyproxy vimagick/tinyproxy:latest ```
+     ##### Option (For security reasons)
+     1. After you have started the container go here: /var/lib/docker/volumes/TinyProxy_Config/_data
+     2. Edit the file tinyproxy.conf by going to string ```#BasicAuth user password```, remove ```#``` and change ```user password``` with your user and passord.
+     3. !!!IMPORTANT!!! Use only this kind of characters -a-z0-9._ 
+     
   5. You need to add this variables in the Amazon AWS Lambda:
-     - proxy_enabled with value true
-     - proxy with value yourip/ddns:8888
+     - ```proxy_enabled``` with value ```true```
+     - ```proxy``` with value ```<yourip or ddns>:<port chosen before>```, if you have do the security steps use this value ```<username>:<password>@<yourip or ddns>:<port chosen before>```
 
 ## Favorites List
 If you enable list permissions as above, the skill will make a second list called "YouTube Favorites". You can use this to set shortcuts to videos you want often, or that are hard to find in search results.
