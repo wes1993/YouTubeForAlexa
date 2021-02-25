@@ -133,9 +133,10 @@ Simple Way but not 100% working:
 Simple Way also, work 100% but you must run a server in your home (Like Raspberry or others) and have static IP or DDNS service like duckdns etc.:
 ##### 2. Using your Proxy Server in your LAN with the alexa devices:
   1. install Docker: https://docs.docker.com/get-docker/ on the server
-  2. install Docker-Compose: https://docs.docker.com/compose/install/ on the server
-  3. install this proxy server: https://github.com/vimagick/dockerfiles/tree/master/tinyproxy.
-  4. You need to add this variables in the Amazon AWS Lambda:
+  2. install this proxy server: https://hub.docker.com/r/vimagick/tinyproxy, using this command: docker pull vimagick/tinyproxy.
+  3. Chose the port where the proxy is exposed and change <port> with chosen port then run the proxy(container in docker) with this command: 
+     docker run --name TinyProxy --restart=always -d -p <port>:8888 -v TinyProxy_Config:/etc/tinyproxy vimagick/tinyproxy:latest
+  5. You need to add this variables in the Amazon AWS Lambda:
      - proxy_enabled with value true
      - proxy with value yourip/ddns:8888
 
