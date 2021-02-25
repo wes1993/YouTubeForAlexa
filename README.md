@@ -137,7 +137,7 @@ Simple Way also, work 100% but you must run a server in your home (Like Raspberr
   3. Chose the port where the proxy is exposed and change <port> with chosen port then run the proxy(container in docker) with this command: 
      ```docker run --name TinyProxy --restart=always -d -p <port>:8888 -v TinyProxy_Config:/etc/tinyproxy vimagick/tinyproxy:latest ```
      ##### Option (For security reasons)
-     1. After you have started the container go here: /var/lib/docker/volumes/TinyProxy_Config/_data
+     1. After you have started the container go here: ```/var/lib/docker/volumes/TinyProxy_Config/_data```
      2. Edit the file tinyproxy.conf by going to string ```#BasicAuth user password```, remove ```#``` and change ```user password``` with your user and passord.
      3. !!!IMPORTANT!!! Use only this kind of characters -a-z0-9._ 
      
