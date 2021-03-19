@@ -85,7 +85,7 @@ Commands 8, 9, 10 and 11 are only available in English at the moment. Need them 
 14. Near Function Code click Actions and Upload a Zip File, upload this file:            https://github.com/wes1993/YouTubeForAlexa/blob/master/YouTubeForAlexaLambda.zip
 15. In the Lambda Funcion Page near Environment variables click edit (in the bottom of the page).
 16. Add Environment variables with DEVELOPER_KEY and the code that we have taken from Google (saved before).
-17. In the Basic settings fields set 512 in Memory (MB) and 10 Sec in Timeout
+17. In the Basic settings fields set 512 in Memory (MB) and 20 Sec in Timeout
 18. Click save and copy the ARN - in the top right corner of the page.
 
 
