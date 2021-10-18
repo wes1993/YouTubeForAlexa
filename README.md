@@ -1,7 +1,7 @@
 # YouTubeForAlexa
 An Alexa Skill For Play YouTube with Echo Devices
 ## Unofficial YouTube skill for Alexa
-__Last update: 24 May 2021 (USE Python 3.7 in Amazon AWS)__
+__Last update: 18 Oct 2021 (USE Python 3.7 in Amazon AWS)__
 
 # If you like my work buy me a coffe: [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/paypalme/wes93)
 
