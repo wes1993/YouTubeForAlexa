@@ -1,7 +1,7 @@
 # YouTubeForAlexa
 An Alexa Skill For Play YouTube with Echo Devices
 ## Unofficial YouTube skill for Alexa
-__Last update: 18 Oct 2021 (USE Python 3.7 in Amazon AWS)__
+__USE Python 3.7 in Amazon AWS__
 
 # If you like my work buy me a coffe: [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/paypalme/wes93)
 
@@ -129,7 +129,8 @@ Simple Way but not 100% working:
   1. Go to this link: https://rapidapi.com/convertisseur.mp3.video/api/download-video-youtube1, and register to the website (the api if free only for the first 1000 request in        24H, it's about 50 hours of video with duration of 3 minutes)
   2. After you are registered and obtained your api key create the following Variable in the Amazon AWS Lambda:
      - ```apikey``` with your api key from rapidapi
-     - ```rapidapi``` with value ```true```
+     - ```get_url_service``` with value ```rapidapi```
+     
 Simple Way also, work 100% but you must run a server in your home (Like Raspberry or others) and have static IP or DDNS service like duckdns etc.:
 ##### 2. Using your Proxy Server in your LAN with the alexa devices:
   1. install Docker: https://docs.docker.com/get-docker/ on the server
