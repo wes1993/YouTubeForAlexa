@@ -147,7 +147,7 @@ __Simple Way also, work 100% but you must run a server in your home (Like Raspbe
      - ```proxy``` with value ```<yourip or ddns>:<port chosen before>```, if you have do the security steps use this value ```<username>:<password>@<yourip or ddns>:<port chosen before>```
 
 ## Change Default Service for Video URL Grabbing
-If you want you can change the service that the skill use to obtain the URL of the video, there are 3 services at the moment and you could chose only one fo this:
+If you want you can change the service that the skill use to obtain the URL of the video, there are 3 services at the moment and you could chose only one of this:
   1. Create variable ```get_url_service``` in AWS website (Inside Lambda Function chose in the upper menu Configuration then Environment variables)
   2. Chose one of this services ```youtube_dl(Defaul) or pytube or rapidapi```
      
