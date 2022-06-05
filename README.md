@@ -149,8 +149,9 @@ __Simple Way also, work 100% but you must run a server in your home (Like Raspbe
 ## Change Default Service for Video URL Grabbing
 If you want you can change the service that the skill use to obtain the URL of the video, there are 3 services at the moment and you could chose only one fo this:
   1. Create variable ```get_url_service``` in AWS website (Inside Lambda Function chose in the upper menu Configuration then Environment variables)
-  2. Chose one of this services ```youtube_dl(Defaul) or pytube or rapidapi``
-     *For rapidapi see the chapter "Using a 3RD party API service (you need to use your card)"
+  2. Chose one of this services ```youtube_dl(Defaul) or pytube or rapidapi```
+     
+     *For __rapidapi__ see the chapter "Using a 3RD party API service (you need to use your card)"
      
 ## Favorites List
 If you enable list permissions as above, the skill will make a second list called "YouTube Favorites". You can use this to set shortcuts to videos you want often, or that are hard to find in search results.
