@@ -151,11 +151,11 @@ If you want you can change the service that the skill use to obtain the URL of t
   1. Create variable ```get_url_service``` in AWS website (Inside Lambda Function chose in the upper menu Configuration then Environment variables)
   2. Chose one of this services ```youtube_dl or pytube or rapidapi```
      
-     __youtube_dl__ - More stable but slower, see down
-     __pytube__ - Faster then youtube_dl but really really unreliable
+     __youtube_dl__ - More stable but slower, see down     
+     __pytube__ - Faster then youtube_dl but really really unreliable     
      __rapidapi__ - Not suggested, use only in alternative at Proxy
      
-     *For __rapidapi__ see the chapter "Using a 3RD party API service (you need to use your card)"
+     *For __rapidapi__ see the chapter "Using a 3RD party API service (you need to use your card)"     
      *For __youtube_dl__ The first time you start listen youtube song you should ask two times to play some song because is slower and AWS has some sort of timeout limit.
      
 ## Favorites List
