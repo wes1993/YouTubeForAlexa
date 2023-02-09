@@ -134,14 +134,16 @@ If you want to do add the repository manually, please follow the procedure highl
 ![image](https://user-images.githubusercontent.com/52070589/217865060-a7ef067b-a96b-459e-a263-9f29be0e0994.png)
 5. Open the port you have chosed (Defaul 4443) on your router
 6. Go to Amazon AWS (Lambda Function --> Config --> Environment Variables) and add/edit this environment variables here:
-
-Variable One
+Variable One:
+```
 Key: get_url_service
 Value: youtubestream
-
-Variable Two
+```
+Variable Two:
+```
 Key: ytstreamurl
 Value: <username>:<passwor>@<hostanme>:<port>
+```
 
 You should compile the key ytstreamurl with the details chosen in the addon config.
 
