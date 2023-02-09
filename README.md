@@ -120,8 +120,32 @@ This skill can make a list of the last 90 videos played, but you have to give it
 The list can be viewed in the Alexa app, click Lists from the main menu.
 
 That's it!
+## Extra step 1 (Really Reccommended):
+Unfortunately PyTube and Youtube_dl become very slow and unstable, thanks to @DavidBerdik I have created an homeassistant addon that makes everything super reliable, in alternative, if you don't have homeassistant you can use the docker container from @DavidBerdik, [Click Here] (https://github.com/DavidBerdik/YouTube-Stream-Repeater) (remeber to configure a Proxy on top of it).
+1. Add my repo to HomeAssistant addon store:
+[![Add repository on my Home Assistant][repository-badge]][repository-url]
+If you want to do add the repository manually, please follow the procedure highlighted in the [Home Assistant website](https://home-assistant.io/hassio/installing_third_party_addons). Use the following URL to add this repository: https://github.com/wes1993/Wes93-Repo
 
-## Extra step (Optional):
+2. Search and install "YouTube Stream Repeater HTTPS" addon
+![image](https://user-images.githubusercontent.com/52070589/217858867-ca68b473-352f-4d55-9d58-e59f4416ed87.png)
+3. After install (It will take a while) go to settings TAB and insert User/Password and if you want change the port:
+![image](https://user-images.githubusercontent.com/52070589/217864698-737b20ac-02a4-4b7c-a97e-03fd6752db96.png)
+4. Start the addon and check the Registry if everthing it's fine, see the photo here:
+![image](https://user-images.githubusercontent.com/52070589/217865060-a7ef067b-a96b-459e-a263-9f29be0e0994.png)
+5. Open the port you have chosed (Defaul 4443) on your router
+6. Go to Amazon AWS (Lambda Function --> Config --> Environment Variables) and add/edit this environment variables here:
+
+Variable One
+Key: get_url_service
+Value: youtubestream
+
+Variable Two
+Key: ytstreamurl
+Value: <username>:<passwor>@<hostanme>:<port>
+
+You should compile the key ytstreamurl with the details chosen in the addon config.
+
+## Extra step 2 (Optional), If you have done the reccommended Optional step 1 you don't need to do this:
 Unfortunately for some video Youtube pretend that the request (Amazon AWS Server) come from the client that listen the video (Alexa Device).
 For fixing this there are some ways:
 __Simple Way but not 100% working:__
