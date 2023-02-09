@@ -26,7 +26,7 @@ playlist_favo_name = None
 #Get Latest GitHub Version
 update = requests.get('https://api.github.com/repos/wes1993/YouTubeForAlexa/releases/latest')
 githubversion = update.json()["tag_name"]
-version = "28.09.2022"
+version = "09.02.2023"
 
 def build_speechlet_response(title, output, reprompt_text, should_end_session):
     return {
