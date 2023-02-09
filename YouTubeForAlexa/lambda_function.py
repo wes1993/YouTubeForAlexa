@@ -869,15 +869,6 @@ def channel_search(query, sr, do_shuffle='0'):
         shuffle(videos)
     return videos[0:50], playlist_title
 
-
-#def get_url_and_title(id):
-#    if 'youtube_dl' in environ and (environ['youtube_dl'].lower() == 'true' or 'http' in environ['youtube_dl']):
-#        return get_url_and_title_youtube_dl(id)
-#    elif 'rapidapi' in environ and (environ['rapidapi'].lower() == 'true'):
-#        return get_url_and_title_rapidapi(id)
-#    else:
-#        return get_url_and_title_pytube(id)
-
 def get_url_and_title(id):
     if 'get_url_service' in environ and (environ['get_url_service'].lower() == 'pytube'):
         return get_url_and_title_pytube(id)
@@ -890,17 +881,9 @@ def get_url_and_title(id):
 
 
 def get_url_and_title_youtube_dl(id, retry=True):
-#    if 'youtube_dl' in environ and 'http' in environ['youtube_dl']:
-#        params = {'id': id}
-#        r = requests.get(environ['youtube_dl'], params=params)
-#        info = r.json()
-#    else:
     import youtube_dl
     logger.info('Getting youtube-dl url for https://www.youtube.com/watch?v='+id)
     youtube_dl_properties = { 'quiet' : True, 'cachedir' : '/tmp/' }
-#    youtube_dl_properties = {
-#        'cachedir' : False, 
-#    }
     if 'proxy_enabled' in environ and 'proxy' in environ and environ['proxy_enabled'].lower() == 'true':
         youtube_dl_properties['proxy'] = environ['proxy']
     try:
@@ -938,8 +921,6 @@ def get_url_and_title_youtube_dl(id, retry=True):
     return None, None
 
 def get_url_and_title_pytube(id, retry=True):
-#    if 'pytube' in environ and 'http' in environ['pytube']:
-#        return get_url_and_title_pytube_server(id)
     from pytube import YouTube
     from pytube.exceptions import LiveStreamError, VideoUnavailable
     proxy_list = {}
@@ -1066,8 +1047,8 @@ def get_url_and_title_pytube(id, retry=True):
 #        stream_ext = json_decode['link']
 #        logger.info(stream_ext)
 #    return stream_ext, first_stream.title
-
 #### Il formato del file MP3 che viene estratto non sembra essere Supportato da Alexa #####
+
 def get_url_and_title_rapidapi(id, retry=True):
     apikey = environ['apikey']
     proxy_list = {}
@@ -1082,7 +1063,6 @@ def get_url_and_title_rapidapi(id, retry=True):
     response = requests.request("GET", url, headers=headers, params=querystring)
     json_decode = response.json()
     stream_ext = json_decode['link']
-    #stream_ext = "https://rr2---sn-uxaxpu5ap5-jp5s.googlevideo.com/videoplayback?expire=1662399962&ei=euEVY8ieGdnix_APjo-fiAI&ip=87.17.114.113&id=o-AGwyaiGB9fd_eN0JJwDPHm8isHq_V847ViPC6y8HJsB4&itag=140&source=youtube&requiressl=yes&mh=zG&mm=31%2C29&mn=sn-uxaxpu5ap5-jp5s%2Csn-hpa7kn7z&ms=au%2Crdu&mv=m&mvi=2&pl=24&gcr=it&initcwndbps=1213750&vprv=1&mime=audio%2Fmp4&ns=YNen02-9vsI6kSpgvIH5E1oH&gir=yes&clen=3092641&dur=190.973&lmt=1603781547785498&mt=1662378082&fvip=3&keepalive=yes&fexp=24001373%2C24007246&c=WEB&rbqsm=fr&txp=1311222&n=n2Gav5d5tLICBfz&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cgcr%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRAIgAzdbVnJREC8b3pZQqPlTE2TO18GfLsv4BkmDDJqmfeYCIFItlwLbALLYwQI-Olsux5oHJZsX4eQxh2Th3uzllq_R&sig=AOq0QJ8wRQIgFOUUL3Ap2FPH9Tep1CtJ8NEUF93E-zLSb9xrLRZW1VMCIQDKinzkxK5AahiSn34t7JSTszqp5bcDnggsnYxh6EDbCw=="
     first_stream = json_decode['title']
     return stream_ext, first_stream
 #### Il formato non sembra essere Supportato #####
@@ -1092,7 +1072,6 @@ def get_url_and_title_youtubestream(id, retry=True):
     logger.info('Getting YouTubeStream url for https://www.youtube.com/watch?v='+id)
     if 'ytstreamurl' in environ:
         url = "https://" + environ['ytstreamurl'] + "/api/meta/" + id
-        logger.info(url)
         response = requests.request("GET", url)
         json_decode = response.json()
         try:
@@ -1109,19 +1088,6 @@ def get_url_and_title_youtubestream(id, retry=True):
     else:
         logger.info("Please add URL for YouTubeStream Server in Environ (ytstreamurl)")
         return False, False
-
-
-#def get_url_and_title_pytube_server(id):
-#    params = {'id': id, 'video': video_or_audio[1]}
-#    r = requests.get(environ['pytube'], params=params)
-#    info = r.json()
-#    if info['is_live'] is True:
-#        logger.info(id+' is a live video')
-#        return get_live_video_url_and_title(id)
-#    if info['url'] is not None:
-#        return info['url'], info['title']
-#    logger.info('Unable to get URL for '+id)
-#    return False, False
 
 
 def get_live_video_url_and_title(id):
